@@ -1,129 +1,80 @@
-.
+# 🎬 IMDB Movie Rating Analysis using Pandas
 
-🎬 IMDB Movie Rating Analysis using Pandas
-📁 1. Dataset Overview
-Three key datasets were used:
+This project performs exploratory data analysis (EDA) on IMDB movie data using Python and the Pandas library. It includes data cleaning, statistical analysis, visualization, and merging datasets to gain insights about movie ratings, genres, and user preferences.
 
-movies.csv: Contains movieId, title, and genres for ~27,000 movies.
+---
 
-ratings.csv: Contains 20 million+ user ratings (userId, movieId, rating, timestamp).
+## 📁 Dataset Overview
 
-tags.csv: ~465,000 user-generated tags for various movies.
+Three datasets used:
+- `movies.csv`: Movie titles and genres (~27K rows)
+- `ratings.csv`: 20M+ user ratings with timestamps
+- `tags.csv`: 465K+ user-generated tags
 
-🔧 2. Data Preprocessing & Cleaning
-Missing Values:
+---
 
-movies and ratings had no missing data.
+## 🔧 Data Preprocessing
 
-tags had some missing rows, which were successfully dropped.
+- Dropped unnecessary `timestamp` columns.
+- Checked for and handled missing values:
+  - `tags.csv` had missing values, which were removed.
+- Ensured correct data types for analysis.
 
-Columns Removed:
+---
 
-timestamp column from ratings and tags was dropped since it wasn't required for the analysis.
+## 📊 Descriptive Statistics
 
-Data Types:
+- Ratings range: 0.5 to 5.0
+- Most frequent rating: 4.0
+- Mean rating: 3.52
+- Used histogram and boxplot for visualization
 
-Ensured compatibility of numerical operations (e.g., rating as float).
+---
 
-📊 3. Descriptive Statistics on Ratings
-plaintext
-Copy code
-count      ≈ 20 million
-mean       ≈ 3.53
-std dev    ≈ 1.05
-min        = 0.5
-max        = 5.0
-mode       = 4.0
-Most ratings were between 3.0 and 4.5.
+## 🔎 Tags Analysis
 
-A histogram and boxplot confirmed the skewed but central distribution.
+- Cleaned tag data to remove nulls
+- Top tags: "in Netflix queue", "superhero", "funny", "dark hero"
+- Used bar charts to visualize top tags
 
-🔎 4. Tags Analysis
-Total tags (after cleaning): 465,548
+---
 
-Most common tags:
+## 🎥 Genre-Based Filtering
 
-"in Netflix queue", "atmospheric", "superhero", "funny", etc.
-
-Least common tags were specific and often appeared only once (e.g., "killer fish", "Paul Adelstein").
-
-Bar charts visualized tag popularity.
-
-🎥 5. Genre-Based Filtering
-Action Movies were filtered using:
-
-python
-Copy code
+Filtered genres using string operations, e.g., movies tagged with 'Action':
+```python
 is_action = movies['genres'].str.contains('Action')
-Example Action Films:
+```
 
-GoldenEye, Heat, Assassins, Mortal Kombat, From Dusk Till Dawn
+---
 
-🧮 6. Statistical Insights from Ratings
-Ratings Count per Rating Value:
-Rating	Count
-0.5	239,125
-1.0	680,732
-3.0	4,291,193
-4.0	5,561,926 ← Most common
-5.0	2,898,660
+## 📈 Group By and Aggregation
 
-Ratings per Movie:
-Highly rated movies (many had consistent 5.0 ratings).
+- Counted number of ratings per rating score
+- Calculated average rating per movie
+- Identified most and least rated movies
 
-Aggregated average ratings for each movieId.
+---
 
-📌 7. Data Filtering Examples
-Extracted highly-rated movies:
+## 🔗 Merging Datasets
 
-python
-Copy code
-ratings[ratings['rating'] == 5.0]
-Filtered based on genre and tag presence.
-
-🔗 8. Merging Datasets
-Merged movies with tags using:
-
-python
-Copy code
+Merged `movies` and `tags`:
+```python
 merged_df = movies.merge(tags, on='movieId', how='inner')
-This allowed for analyzing:
+```
 
-Which tags are associated with highly rated or specific genre movies.
+This helped analyze which tags are used for top-rated or specific-genre movies.
 
-Movie descriptions enriched with user sentiments.
+---
 
-Example:
+## 📌 Key Findings
 
-Toy Story (1995) → tagged with “Pixar animation”, “Disney”, “computer animation”
+- Ratings mostly lie between 3.0 and 4.5
+- Action and Comedy are the most common genres
+- 4.0 is the most common rating
+- Some movies consistently receive 5.0 ratings
+- Tags add valuable user sentiment
 
-📉 9. Correlation Analysis
-python
-Copy code
-ratings.corr()
-userId	movieId	rating
-userId	1.000	-0.0008	0.0012
-movieId		1.000	0.0026
-rating			1.000
-
-Low correlation among columns—indicating rating is not strongly dependent on userId or movieId alone.
-
-📌 Key Findings
-Most ratings are between 3.0–4.0, indicating users tend to rate favorably.
-
-4.0 is the most common rating.
-
-Action and Comedy are dominant genres.
-
-User-generated tags provide rich insight into movie themes (dark hero, noir thriller, etc.).
-
-Highly rated films show consistent patterns in both ratings and user tags.
-
-📈 Visualizations (Generated)
-Histogram of ratings
-
-Boxplot of ratings
-
-Bar chart of most frequent tags
+---
 
 

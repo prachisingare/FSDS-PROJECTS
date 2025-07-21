@@ -1,69 +1,73 @@
-#🔍 EDA on Employee Dataset
-This project demonstrates Exploratory Data Analysis (EDA) on a small employee dataset using Python libraries.
+# 📊 Exploratory Data Analysis (EDA) on Employee Dataset
 
-Exploratory Data Analysis (EDA) is the process of examining datasets to summarize their main characteristics, often using visual methods. It helps you:
+This project performs **Exploratory Data Analysis (EDA)** on a raw employee dataset using Python libraries such as `pandas`, `numpy`, `seaborn`, and `matplotlib`. The goal is to clean, transform, visualize, and prepare the data for future machine learning tasks.
 
-Understand the structure and quality of data
+---
 
-Detect missing values or outliers
+## 📖 What is EDA?
 
-Uncover patterns, relationships, and trends
+**Exploratory Data Analysis (EDA)** is a critical step in the data science process. It involves:
 
-#🔧 Common EDA Techniques Used
-Data Cleaning: Removing special characters, fixing datatypes
+- Understanding the structure of the dataset
+- Detecting missing or incorrect values
+- Identifying patterns, anomalies, and relationships
+- Visualizing the data for deeper insights
 
-Missing Value Treatment: Filling missing data using mean or mode
+---
 
-Summary Statistics: Using .info(), .describe(), .isnull().sum()
+## 🔧 EDA Techniques Used
 
-Data Transformation: Regex extraction, type conversion
+- **Data Cleaning**  
+  Removed special characters using regular expressions and standardized formats
 
-Data Visualization:
+- **Missing Value Treatment**  
+  - Filled `Age` and `Exp` using **mean**
+  - Filled missing `Location` using **mode**
 
-Distribution plots (distplot)
+- **Data Transformation**  
+  - Converted columns to correct data types (e.g., `int`, `category`)
+  - Extracted numeric values from text using regex
 
-Histograms (plt.hist)
+- **Feature Engineering**  
+  Created one-hot encoded variables using `pd.get_dummies()`
 
-Regression plots (lmplot)
+- **Data Visualization**  
+  - Distribution plots for Salary
+  - Histograms for Experience
+  - Regression plots (`lmplot`) to analyze relationship between `Exp` and `Salary`
 
-Feature Engineering: One-hot encoding (pd.get_dummies())
+---
 
-#📦 Dataset Columns
-Name
+## 📦 Dataset Features
 
-Domain
+The dataset contains the following columns:
 
-Age
+| Column   | Description              |
+|----------|--------------------------|
+| Name     | Employee name            |
+| Domain   | Area of work             |
+| Age      | Age of the employee      |
+| Location | Work location            |
+| Salary   | Monthly salary (₹)       |
+| Exp      | Years of experience      |
 
-Location
+---
 
-Salary
+## 📁 Output Files
 
-Exp (Experience)
+- ✅ Cleaned CSV: `clean_data.csv`
+- 📈 Visual plots: Salary & Experience distribution, linear regression
 
-#🧪 Project Workflow
-Load Excel data with pandas
+---
 
-Clean and preprocess the data
+## 📚 Libraries Required
 
-Handle missing values
+- `pandas`
+- `numpy`
+- `seaborn`
+- `matplotlib`
 
-Visualize salary and experience
+---
 
-Prepare data for modeling
-
-#📚 Libraries Used
-pandas
-
-numpy
-
-seaborn
-
-matplotlib
-
-#📁 Output
-Cleaned dataset saved as clean_data.csv
-
-Visualizations for salary & experience
 
 

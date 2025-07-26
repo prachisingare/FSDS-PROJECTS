@@ -61,7 +61,7 @@ st.checkbox()	Toggle to show raw data
 
 - Understanding user interface interaction via Python
 
-🙋‍♀️ Author
+##  🙋‍♀️ Author
 - Prachi Singare
 - 🎓 B.Tech in Artificial Intelligence and Data Science (2025)
 - 💬 Aspiring Developer | Python Learner | Streamlit Explorer

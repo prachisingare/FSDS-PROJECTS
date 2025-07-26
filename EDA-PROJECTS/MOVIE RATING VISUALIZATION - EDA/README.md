@@ -107,6 +107,7 @@ The project contains various visualizations:
 
 🎛️ Multi-plot subplots showing comparative views
 
+# 🙋‍♀️ Author
 Prachi Singare
 - 🎓 B.Tech in Artificial Intelligence and Data Science (2025)
 - 💡 Passionate about data visualization, analytics, and storytelling through data

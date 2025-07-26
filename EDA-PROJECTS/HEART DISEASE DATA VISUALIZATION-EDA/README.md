@@ -110,8 +110,8 @@ This EDA provides comprehensive insights into factors affecting heart disease. I
 - B.Tech in Artificial Intelligence and Data Science (2025)
 - Passionate about data analysis, machine learning, and creating insights from data.
 
-🔗[LinkedIn](www.linkedin.com/in/prachi-singare-8272b3274)
+🔗 [LinkedIn](www.linkedin.com/in/prachi-singare13)
 
-💻[GitHub](https://github.com/prachisingare)
+💻 [GitHub](https://github.com/prachisingare)
 
 

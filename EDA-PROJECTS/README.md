@@ -67,9 +67,9 @@ Prepare data for modeling by feature understanding and transformation (if needed
 "
 
 ## 📬 Contact
-👤 Prachi Singare
-🎓 B.Tech in Artificial Intelligence and Data Science (2025)
-📧 [singareprachi777@gmail.com]
+- 👤 Prachi Singare
+- 🎓 B.Tech in Artificial Intelligence and Data Science (2025)
+- 📧 [Email] (singareprachi777@gmail.com)
 
 
 

@@ -112,6 +112,6 @@ This EDA provides comprehensive insights into factors affecting heart disease. I
 
 🔗[LinkedIn](www.linkedin.com/in/prachi-singare-8272b3274)
 
-💻 GitHub
+💻[GitHub](https://github.com/prachisingare)
 
 

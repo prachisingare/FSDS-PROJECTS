@@ -106,9 +106,9 @@ This EDA provides comprehensive insights into factors affecting heart disease. I
 
 
 # 🙋‍♀️ About the Author
-Prachi Singare
-B.Tech in Artificial Intelligence and Data Science (2025)
-Passionate about data analysis, machine learning, and creating insights from data.
+-Prachi Singare
+-B.Tech in Artificial Intelligence and Data Science (2025)
+-Passionate about data analysis, machine learning, and creating insights from data.
 
 🔗 LinkedIn
 

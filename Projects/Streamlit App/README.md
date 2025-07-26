@@ -43,6 +43,19 @@ An image viewer and processor built for experimenting with color, layout, and pi
 **📁 File**: `elephant_image_processor.py`
 
 ---
+# 📌 Learning Outcomes
+
+Through these projects, I’ve learned:
+
+How to structure a Streamlit app from scratch
+
+Real-time interaction with images and user inputs
+
+Page config, caching, and layout customization
+
+Converting static analysis to interactive UI tools
+
+
 
 ## 💡 How to Run the Apps
 

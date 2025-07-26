@@ -46,7 +46,7 @@ Thanks to the Streamlit community and documentation for making it easy to start 
 
 Prachi Singare
 - 🎓 B.Tech in Artificial Intelligence and Data Science (2025)
-- 💡 Beginner in Python, Streamlit, and Web Development
+- 💡 Beginner in Python and Streamlit
 
 
 

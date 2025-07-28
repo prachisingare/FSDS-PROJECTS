@@ -28,13 +28,17 @@ Just upload your CSV file, and get a complete EDA report including:
 🌐 Option to share the app via a public link
 
 ---
+
 ## 🛠️ Tech Stack
-Component	Description
-Python	Main programming language
-Gradio	Web interface for model interaction
-Pandas	Data manipulation and analysis
-Matplotlib & Seaborn	Data visualizations
-Ollama (Mistral)	AI-powered text insights
+
+| Component            | Description                         |
+| -------------------- | ----------------------------------- |
+| Python               | Main programming language           |
+| Gradio               | Web interface for model interaction |
+| Pandas               | Data manipulation and analysis      |
+| Matplotlib & Seaborn | Data visualizations                 |
+| Ollama (Mistral)     | AI-powered text insights            |
+
 
 ---
 ### 🚀 How It Works

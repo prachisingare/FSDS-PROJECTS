@@ -74,4 +74,4 @@ Gallery of visualizations
 ## 👨‍💻 Author
 Prachi Singare
 - B.Tech in Artificial Intelligence and Data Science, 2025
-- LinkedIn: linkedin.com/in/prachi-singare
+- [LinkedIn](linkedin.com/in/prachi-singare)

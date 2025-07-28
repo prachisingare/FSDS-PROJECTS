@@ -44,7 +44,7 @@ Just upload your CSV file, and get a complete EDA report including:
 ### 🚀 How It Works
 Upload CSV File via the Gradio interface.
 
-Missing Values Handling:
+## Missing Values Handling:
 
 Numeric columns → Filled with median
 
@@ -52,19 +52,19 @@ Categorical columns → Filled with mode (currently incorrectly uses median, to 
 
 Summary Statistics are generated using pandas.describe().
 
-AI Insights:
+## AI Insights:
 
 Summary passed to Mistral-7B via Ollama
 
 Returns text-based insights
 
-Data Visualizations:
+## Data Visualizations:
 
 Histograms for each numeric column
 
 Correlation heatmap for all numeric features
 
-Output:
+## Output:
 
 Text report (summary + AI insights)
 
@@ -73,5 +73,5 @@ Gallery of visualizations
 ---
 ## 👨‍💻 Author
 Prachi Singare
-B.Tech in Artificial Intelligence and Data Science, 2025
-LinkedIn: linkedin.com/in/prachi-singare
+- B.Tech in Artificial Intelligence and Data Science, 2025
+- LinkedIn: linkedin.com/in/prachi-singare
